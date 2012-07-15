@@ -1,0 +1,35 @@
+#!/usr/bin/env node
+
+var  appserv = require('../lib/appserv.js'),
+     argv = require('optimist').argv;
+
+
+if (argv.h || argv.help) {
+	console.log(
+		"usage: appserv [options]\n"+
+		"\n"+
+		"options:\n"+
+		"  -f --folder        Folder to use (.)\n"+
+		"  -p --port          Port to use (8080)\n"+
+		"  -i --ip            Address to use (0.0.0.0)\n"+
+		"  -n --nolog         Log messages from output\n"+
+		"  -h --help          Print this list and exit.\n"
+	);
+	process.exit();
+}
+
+var folder = argv.f || argv.folder || '.',
+	port = argv.p || argv.port || 8080,
+    host = argv.i || argv.ip || '127.0.0.1',
+    log = (argv.n || argv.nolog) ? (function () {}): console.log;
+
+appserv.start({
+	folder:folder,
+	port:port,
+	host:host
+});
+
+log('Starting up appserv\n'+
+	'serving '+ folder + ' on ' + host+':'+port);
+log('Hit CTRL-C to stop the server');
+

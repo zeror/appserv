@@ -1,0 +1,29 @@
+{
+  "name": "appserv",
+  "version": "0.1.0",
+  "author": "Zeror <zero@gmx.de>",
+  "description": "A simple package that allows you to create a static async file-server vor you apps.",
+  "main": "./lip/appserv.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zeror/appserv.git"
+  },
+  "keywords": [
+    "app","static","http","server","appserver"
+  ],
+  "homepage": "http://zeror.github.com/appserv",
+  "engines" : { "node": ">= 0.4.1" },
+  "license" : "MIT/X11",
+  "dependencies": {
+    "optimist": ">=0.3.x",
+    "node-static": ">=0.6.x"
+  },
+  "devDependencies": {},
+  "preferGlobal": "true",
+  "bin": {
+    "appserv": "./bin/appserv"
+  },
+  "scripts": {
+    "start": "node ./bin/appserv"
+  }
+}
