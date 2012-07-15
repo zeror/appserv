@@ -11,7 +11,7 @@
   "keywords": [
     "app","static","http","server","appserver"
   ],
-  "homepage": "http://zeror.github.com/appserv",
+  "homepage": "http://github.com/zeror/appserv",
   "engines" : { "node": ">= 0.4.1" },
   "license" : "MIT/X11",
   "dependencies": {
