@@ -6,7 +6,7 @@
   "main": "./lip/appserv.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/zeror/appserv.git"
+    "url": "http://github.com/zeror/appserv.git"
   },
   "keywords": [
     "app","static","http","server","appserver"
