@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/zeror/appserv.png)](http://travis-ci.org/zeror/appserv)
 # appserv: App-Server #
 
 A simple package that allows you to create a static async file-server vor you apps.
